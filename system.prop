@@ -74,6 +74,9 @@ ro.iorapd.enable=true
 # SSR
 persist.vendor.ssr.restart_level=ALL_ENABLE
 
+# Use Vulkan backend for Skia UI rendering
+debug.hwui.renderer=skiavk
+
 # Zygote
 persist.device_config.runtime_native.usap_pool_enabled=true
 
