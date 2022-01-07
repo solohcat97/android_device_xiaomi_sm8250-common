@@ -105,3 +105,6 @@ ro.config.dha_th_rate=2.3
 ro.config.sdha_apps_bg_max=64
 ro.config.sdha_apps_bg_min=8
 ro.config.avoid_gfx_accel=true
+
+#Disbale blur on app launch 
+ro.launcher.blur.appLaunch=0
