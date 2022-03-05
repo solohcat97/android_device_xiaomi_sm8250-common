@@ -141,6 +141,15 @@ PRODUCT_PACKAGES += \
     audio.usb.default \
     audio.usbv2.default
 
+# ANT+
+PRODUCT_PACKAGES += \
+    AntHalService-Soong \
+    com.dsi.ant.antradio_library \
+    com.dsi.ant@1.0.vendor
+
+PRODUCT_COPY_FILES += \
+    external/ant-wireless/antradio-library/com.dsi.ant.antradio_library.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/com.dsi.ant.antradio_library.xml
+
 # Task profiles
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/task_profiles/cgroups_31.json:$(TARGET_COPY_OUT_SYSTEM)/etc/task_profiles/cgroups_31.json \
@@ -266,13 +275,10 @@ PRODUCT_PACKAGES += \
     libvulkan \
     memtrack.kona \
     vendor.display.config@1.5 \
-<<<<<<< HEAD
     vendor.display.config@1.11.vendor \
-=======
     vendor.display.config@1.9 \
     vendor.display.config@1.11 \
     vendor.display.config@1.14 \
->>>>>>> bc0edf7... sm8250-common: Update vendor.display.config & vendor.qti.hardware.display.* targets
     vendor.display.config@2.0 \
     vendor.display.config@1.0.vendor \
     vendor.display.config@1.1.vendor \
