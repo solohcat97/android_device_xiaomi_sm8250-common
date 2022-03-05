@@ -24,10 +24,20 @@ vendor/lib/libadm.so
 vendor/lib/libaudcal.so
 vendor/lib/libqtigef.so
 vendor/lib/libssrec.so
+vendor/lib/libqtigef.so
+vendor/lib64/libqtigef.so
 
 # Audio FX modules
 vendor/lib/soundfx/libasphere.so
 vendor/lib/soundfx/libshoebox.so
+vendor/lib64/soundfx/libeffectproxy.so
+vendor/lib64/soundfx/libhwdap.so
+vendor/lib64/soundfx/libswdap.so
+vendor/lib64/soundfx/libswgamedap.so
+vendor/lib/soundfx/libeffectproxy.so
+vendor/lib/soundfx/libhwdap.so
+vendor/lib/soundfx/libswdap.so
+vendor/lib/soundfx/libswgamedap.so
 
 # Bluetooth
 vendor/bin/hw/android.hardware.bluetooth@1.0-service-qti|1229a014f7204074e32d6e403a3fc1e148730e2a
@@ -168,43 +178,6 @@ vendor/lib64/hw/vendor.qti.hardware.capabilityconfigstore@1.0-impl.so|2163df1cf5
 
 # Consumer IR
 vendor/lib64/hw/consumerir.default.so:vendor/lib64/hw/consumerir.kona.so
-
-# Dolby
-system/lib64/vendor.dolby.hardware.dms@2.0.so
--system_ext/priv-app/DaxUI/DaxUI.apk|e56a06ec269e9d194c86007b63cb8fe2e742e607
--system_ext/priv-app/daxService/daxService.apk
-system_ext/etc/permissions/privapp-com.dolby.daxappui.xml
-system_ext/etc/permissions/privapp-com.dolby.daxservice.xml
-system_ext/etc/sysconfig/config-com.dolby.daxappui.xml
-system_ext/etc/sysconfig/config-com.dolby.daxservice.xml
-system_ext/etc/sysconfig/hiddenapi-com.dolby.daxservice.xml
-vendor/bin/hw/vendor.dolby.hardware.dms@2.0-service
-odm/etc/dolby/dax-default.xml
-vendor/etc/init/vendor.dolby.hardware.dms@2.0-service.rc
-vendor/lib/libdapparamstorage.so
-vendor/lib/libdeccfg.so
-vendor/lib/libqtigef.so
-vendor/lib/libstagefright_soft_ac4dec.so
-vendor/lib/libstagefright_soft_ddpdec.so
-vendor/lib/libstagefrightdolby.so
-vendor/lib/soundfx/libeffectproxy.so
-vendor/lib/soundfx/libhwdap.so
-vendor/lib/soundfx/libswdap.so
-vendor/lib/soundfx/libswgamedap.so
-vendor/lib/vendor.dolby.hardware.dms@2.0.so
-vendor/lib64/libdapparamstorage.so
-vendor/lib64/libdeccfg.so
-vendor/lib64/libdlbdsservice.so
-vendor/lib64/libqtigef.so
-vendor/lib64/libstagefright_soft_ac4dec.so
-vendor/lib64/libstagefright_soft_ddpdec.so
-vendor/lib64/libstagefrightdolby.so
-vendor/lib64/soundfx/libeffectproxy.so
-vendor/lib64/soundfx/libhwdap.so
-vendor/lib64/soundfx/libswdap.so
-vendor/lib64/soundfx/libswgamedap.so
-vendor/lib64/vendor.dolby.hardware.dms@2.0.so
-vendor/lib64/vendor.dolby.hardware.dms@2.0-impl.so
 
 # Display (HDR) - from LA.UM.9.12.r1-13300-SMxx50.QSSI12.0
 vendor/lib64/libhdr_tm.so|4be3cfff1ef40cbc6ad329b79c60881263aa6723
