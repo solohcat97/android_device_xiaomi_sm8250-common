@@ -340,6 +340,9 @@ PRODUCT_DEXPREOPT_SPEED_APPS += \
     Nexuslauncher \
     lawnchair
 
+# Call deleteAllKeys if vold detects a factory reset
+PRODUCT_VENDOR_PROPERTIES += ro.crypto.metadata_init_delete_all_keys.enabled=true
+
 # Fingerprint
 ifeq ($(TARGET_HAS_FOD),true)
 PRODUCT_PACKAGES += \
